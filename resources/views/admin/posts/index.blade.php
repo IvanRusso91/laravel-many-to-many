@@ -30,7 +30,7 @@
                     <td>{{$post->category ? $post->category->name : '-' }}</td>
 
                     <td>
-                        @forelse ($post->tag as $tags )
+                        @forelse ($post->tags as $tags )
                             {{$tags->name}}
                         @empty
                             -
