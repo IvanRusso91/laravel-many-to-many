@@ -107,7 +107,10 @@ class PostController extends Controller
         if($data['title'] != $post->title){
 
             $data['slug']= Post::generateSlug($data['title'],'-');
+        }else{
+            $post->tags()->detach();
         }
+
         $post->update($data);
 
         if(array_key_exists('tags', $data)){
