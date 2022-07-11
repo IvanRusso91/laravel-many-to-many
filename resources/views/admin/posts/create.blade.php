@@ -20,6 +20,7 @@
             <h2 class="mb-3">Inserisci un nuovo Post</h2>
             <form action="{{ route('admin.posts.store') }}" method="POST">
                 @csrf
+
                 <div class="mb-3">
                     <label for="title" class="form-label">Post Title</label>
                     <input type="text" id="title" name="title" class="form-control @error('title') is-invalid @enderror" placeholder="Post Title" value="{{ old('title')}}">
@@ -42,6 +43,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-3">
                     <select class="form-select" name="category_id">
                         <option value="">Seleziona una categoria</option>

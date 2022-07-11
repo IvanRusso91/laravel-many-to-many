@@ -17,6 +17,7 @@
         @endforeach
     }
     @endif
+
     <div>
         <p>{{ $posts->content }}</p>
     </div>
