@@ -76,7 +76,7 @@
                         <label class="mr-3" for="tag{{$loop->iteration}}">{{$tag->name}}</label>
                     @endforeach
 
-                </div
+                </div>
 
                 <button type="submit" class="btn btn-primary">Invia</button>
             </form>
